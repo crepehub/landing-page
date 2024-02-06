@@ -1,4 +1,5 @@
-import Header from "@/app/components/layout/Header";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 import Image from "next/image";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
           every crepes starts here
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

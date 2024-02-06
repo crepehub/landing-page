@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import SocialContact from "./SocialContact";
 
 const header = () => {
   return (
-    <header>
-      <div className="max-w-[1207px] mx-auto px-4 pt-12">
+    <header className="w-full bg-mainRed fixed">
+      <div className="max-w-[1207px] mx-auto pt-12">
         <div className="flex flex-row justify-between items-center h-12">
           <div className="flex flex-row items-center">
             <Link href="/">
@@ -23,24 +24,7 @@ const header = () => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-row gap-2.5">
-            <Link href="https://www.instagram.com/">
-              <Image
-                src="/instagram.svg"
-                alt="instagram"
-                width={40}
-                height={40}
-              />
-            </Link>
-            <Link href="https://www.kakaotalk.com/">
-              <Image
-                src="/kakaotalk.svg"
-                alt="kakaotalk"
-                width={40}
-                height={40}
-              />
-            </Link>
-          </div>
+          <SocialContact />
         </div>
       </div>
     </header>
