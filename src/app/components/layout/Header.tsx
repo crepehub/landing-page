@@ -5,22 +5,37 @@ import SocialContact from "./SocialContact";
 
 const header = () => {
   return (
-    <header className="w-full bg-mainRed fixed">
-      <div className="max-w-[1207px] mx-auto pt-12">
+    //  bg-mainBlack/[0.8]
+    <header className="w-full backdrop-blur-xl fixed z-50">
+      <div className="max-w-[1207px] mx-auto pt-12 pb-[10px]">
         <div className="flex flex-row justify-between items-center h-12">
-          <div className="flex flex-row items-center">
-            <Link href="/">
-              <Image src="/logo.svg" alt="logo" width={187} height={36} />
-            </Link>
+          <div className="flex flex-row ">
+            <div className="mb-[3px] mt-[2px]">
+              <Link href="/">
+                <Image src="/logo.svg" alt="logo" width={187} height={36} />
+              </Link>
+            </div>
             <ul className="flex flex-row mx-12 gap-2.5">
               <li className="p-5">
-                <Link href="/BrandPage">브랜드</Link>
+                <Link href="/BrandPage">
+                  <p className="font-normal text-lg text-mainWhite/[0.4] hover:font-bold hover:text-mainWhite active:font-bold">
+                    브랜드
+                  </p>
+                </Link>
               </li>
               <li className="p-5">
-                <Link href="/BusinessPage">비즈니스</Link>
+                <Link href="/BusinessPage">
+                  <p className="font-normal text-lg text-mainWhite/[0.4] hover:font-bold hover:text-mainWhite active:font-bold">
+                    비즈니스
+                  </p>
+                </Link>
               </li>
               <li className="p-5">
-                <Link href="/MenuPage">메뉴안내</Link>
+                <Link href="/MenuPage">
+                  <p className=" font-normal text-lg text-mainWhite/[0.4] hover:font-bold hover:text-mainWhite active:font-bol">
+                    메뉴안내
+                  </p>
+                </Link>
               </li>
             </ul>
           </div>
