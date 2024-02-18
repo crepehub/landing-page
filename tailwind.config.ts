@@ -8,6 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 30s linear infinite',
+      },
+      keyframes: {
+        'spin-slow': {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      }
+      ,
       colors: {
         "mainRed": "#D53D43",
         "mainWhite": "#FFFFFF",
