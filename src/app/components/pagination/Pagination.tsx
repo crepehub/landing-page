@@ -20,16 +20,18 @@ const Pagination = ({
   }
 
   return (
-    <div className="pagination">
+    <div className="gap-[4px] flex flex-row justify-center mx-auto">
       {pages.map((page, index) => {
         return (
           <button
             key={index}
             onClick={() => setCurrentPage(page)}
-            className={page == currentPage ? "active" : ""}
-          >
-            {page}
-          </button>
+            className={
+              page == currentPage
+                ? " w-[6px] h-[6px] rounded-full bg-mainWhite"
+                : "w-[6px] h-[6px] rounded-full bg-mainWhite/[0.4]"
+            }
+          ></button>
         );
       })}
     </div>
