@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 30s linear infinite',
+        'spin-slow': 'spin 60s linear infinite',
       },
       keyframes: {
         'spin-slow': {
@@ -29,6 +29,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+    },
+    screens: {
+      sm: "360px", //min-width: 640px
+      md: "769px", //min-width: 768px
+      lg: "1024px", //min-width: 1024px
     },
     fontFamily: {
       Pretendard: ["Pretendard"], //Safari 폰트 적용 안됨 이슈 

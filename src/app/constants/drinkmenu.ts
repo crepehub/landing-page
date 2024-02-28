@@ -1,28 +1,28 @@
 const menuItems = [
     {
       id: 1,
-      name: "망고",
+      name: "망고주스",
       img: "/menu/crepes/DOR/OR1_mango.jpg",
       categories: "original",
       description: "망고 맛이 가득한 크레페입니다.",
     },
     {
       id: 2,
-      name: "비나나",
+      name: "바나나주스",
       img: "/menu/crepes/DOR/OR1_바나나.jpg",
       categories: "original",
       description: "달콤한 바나나로 가득한 크레페입니다.",
     },
     {
       id: 3,
-      name: "블베",
+      name: "블베주스",
       img: "/menu/crepes/DOR/OR1_블베.jpg",
       categories: "original",
       description: "부드러운 블루베리 크림이 들어간 크레페입니다.",
     },
     {
       id: 4,
-      name: "생딸기",
+      name: "생딸기주스",
       img: "/menu/crepes/DOR/OR1_생딸기.jpg",
       categories: "original",
       description: "신선한 딸기로 만든 크레페입니다.",
@@ -86,39 +86,31 @@ const menuItems = [
     {
       id: 13,
       name: "딥커스터드",
-      img: "/menu/crepes/DOR/OR3_누텔라스모어.jpg",
-      categories: "original",
-      description: "진한 커스터드 크림이 들어간 크레페입니다.",
-    },
-    {
-      id: 14,
-      name: "딥커스터드",
       img: "/menu/crepes/DOR/OR4_딥커스터드.jpg",
       categories: "original",
       description: "진한 커스터드 크림이 들어간 크레페입니다.",
     },
     {
-      id: 15,
+      id: 14,
       name: "말차생크림",
       img: "/menu/crepes/DOR/OR4_말차생크림.jpg",
       categories: "original",
       description: "고소한 말차생크림이 들어간 크레페입니다.",
     },
     {
-      id: 16,
+      id: 15,
       name: "자바칩",
       img: "/menu/crepes/DOR/OR4_자바칩.jpg",
       categories: "original",
       description: "커피맛과 초콜릿칩이 들어간 크레페입니다.",
     },
     {
-      id: 17,
+      id: 16,
       name: "팬케익",
       img: "/menu/crepes/DOR/OR4_팬케익.jpg",
       categories: "original",
       description: "부드러운 팬케익 크림이 들어간 크레페입니다.",
     },
-  ];
-
+];
 
 export default menuItems;

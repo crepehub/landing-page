@@ -9,7 +9,7 @@ import FixedBanner from "./components/banner/fixedBanner";
 import CarouselScroll from "./components/carousel/CarouselScroll";
 import FullMenuViewButton from "./components/buttons/fullMenuViewButton";
 import Link from "next/link";
-import homeMenu from "./utils/homemenu";
+import homeMenu from "./constants/homemenu";
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState<number>(0);

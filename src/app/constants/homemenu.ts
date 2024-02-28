@@ -39,7 +39,7 @@ const homeMenu = [
         id: 7,
         name: "클래식 누텔라 스모어",
         img: "/image/homemenu/img/hm7.png",
-        categories: "categories",
+        categories: "classic",
     },
     {
         id: 8,
