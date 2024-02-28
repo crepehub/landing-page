@@ -63,8 +63,8 @@ const BusinessPage = () => {
               <KakaoContactButton />
             </div>
           </div>
-          <div className="flex lg:flex-row md:flex-col sm:flex-col justify-center lg:items-center md:items-start sm:items-start mt-[206px] mb-[150px] ">
-            <div className="lg:hidden md:place-self-start sm:place-self-start">
+          <div className="flex lg:flex-row md:flex-col sm:flex-col lg:justify-center md:justify-start lg:items-center md:items-start sm:items-start mt-[206px] mb-[150px] ">
+            <div className="lg:hidden md:place-self-start sm:place-self-start md:mt-[-120px] sm:mt-[-130px]">
               <Image
                 src="/image/tablet/T02/2.jpg"
                 alt="가게 정면 이미지"
