@@ -6,38 +6,23 @@ import Image from "next/image";
 import Footer from "@/app/components/layout/Footer";
 
 const BusinessPage = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  const handleResize = () => {
-    setWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    console.log("Window width:", width);
-  }, [width]);
-
   return (
+    // JSX code...
     <div>
       <Header />
       <div className="h-full items-center bg-mainRed justify-center">
         <div className="justify-center flex flex-col items-center ">
           <div className="flex lg:flex-row md:flex-col sm:flex-col justify-center items-center md:items-start sm:items-start mt-[214px] lg:mt-[214px] md:mt-[0px] sm:mt-[0px]">
-            <div className=" ">
-              {width >= 1024 ? (
+            <div className="">
+              <div className="lg:block md:hidden sm:hidden">
                 <Image
                   src="/image/bg2/img/1.png"
                   alt="가게 정면 이미지"
                   width={586}
                   height={676}
                 />
-              ) : (
+              </div>
+              <div className="lg:hidden md:block sm:block">
                 <Image
                   src="/image/tablet/T02/1.jpg"
                   alt="가게 정면 이미지"
@@ -45,7 +30,7 @@ const BusinessPage = () => {
                   height={492}
                   sizes="100vw"
                 />
-              )}
+              </div>
             </div>
             <div className="flex flex-col lg:px-[87px] lg:py-[64px] md:py-[64px] md:px-[60px] sm:py-[64px] sm:px-[36px] flex-shrink-0">
               <p className="font-Pretendard lg:leading-[64px] lg:font-bold lg:text-5xl lg:mb-[88px] md:leading-[64px] md:font-bold md:text-[48px] md:mb-[88px] sm:text-[29px] sm:font-bold sm:mb-[60px] sm:leading-[38px]">
@@ -64,7 +49,7 @@ const BusinessPage = () => {
             </div>
           </div>
           <div className="flex lg:flex-row md:flex-col sm:flex-col lg:justify-center md:justify-start lg:items-center md:items-start sm:items-start mt-[206px] mb-[150px] ">
-            <div className="lg:hidden md:place-self-start sm:place-self-start md:mt-[-120px] sm:mt-[-130px]">
+            <div className="lg:hidden md:place-self-start sm:place-self-start md:mt-[-120px] sm:mt-[-120p]">
               <Image
                 src="/image/tablet/T02/2.jpg"
                 alt="가게 정면 이미지"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import menuItems from "@/app/utils/constants";
+import menuItems from "@/app/constants/crepemenu";
 
 interface ownProps {
   name: string;

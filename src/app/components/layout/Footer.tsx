@@ -5,7 +5,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="bg-mainBlack ">
-      <div className="max-w-[1207px] mx-auto w-100vw">
+      <div className="max-w-[1207px] mx-auto w-100vw pl-10 lg:pb-0 md:pb-0 sm:pb-[120px]">
         <div className="flex flex-col bg-mainBlack z-50">
           <div className="mt-[53px]">
             <Image src="/logo.svg" alt="logo" width={187} height={36} />
