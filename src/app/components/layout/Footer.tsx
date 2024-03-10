@@ -1,5 +1,5 @@
 import React from "react";
-import SocialContact from "./SocialContact";
+import SocialContact from "@/app/components/layout/SocialContact";
 import Image from "next/image";
 
 const Footer = () => {

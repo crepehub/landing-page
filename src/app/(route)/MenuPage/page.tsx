@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Footer from "@/app/components/layout/Footer";
 import Header from "@/app/components/layout/Header";
-import CategoryTab from "@/app/components/tab/CategoryTab";
+// import CategoryTab from "@/app/components/tab/CategoryTab";
 import CategoryDetailTab from "../../components/tab/categoryDetailTab";
 import FixedBanner from "@/app/components/banner/fixedBanner";
 import Pagination from "@/app/components/pagination/Pagination";
@@ -66,9 +66,7 @@ const MenuPage = () => {
       <Header />
       <div className="h-full items-center bg-mainRed justify-center">
         <div className="justify-center flex flex-col items-center">
-          <div className="mt-[243px]">
-            <CategoryTab />
-          </div>
+          <div className="mt-[243px]">{/* <CategoryTab /> */}</div>
           <div className="mt-[88px] flex flex-row gap-[18px] justify-center items-center ">
             <p className="font-GangwonEduPower font-normal text-[70px] text-mainWhite">
               crepehub
