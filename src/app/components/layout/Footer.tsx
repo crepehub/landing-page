@@ -1,7 +1,7 @@
 import React from "react";
-import SocialContact from "@/app/components/layout/SocialContact";
+// import SocialContact from "@/app/components/layout/SocialContact";
 import Image from "next/image";
-
+import Link from "next/link";
 const Footer = () => {
   return (
     <div className="bg-mainBlack ">
@@ -11,7 +11,28 @@ const Footer = () => {
             <Image src="/logo.svg" alt="logo" width={187} height={36} />
           </div>
           <div className="mt-[38px]">
-            <SocialContact />
+            <div className="flex flex-row gap-2.5 ">
+              <div className="hover:opacity-40">
+                <Link href="https://www.instagram.com/crepehub/">
+                  <Image
+                    src="/instagram.svg"
+                    alt="instagram"
+                    width={40}
+                    height={40}
+                  />
+                </Link>
+              </div>
+              <div className="hover:opacity-40">
+                <Link href="https://www.kakaotalk.com/">
+                  <Image
+                    src="/kakaotalk.svg"
+                    alt="kakaotalk"
+                    width={40}
+                    height={40}
+                  />
+                </Link>
+              </div>
+            </div>
           </div>
           <div className="mt-[16px] mb-[53px] flex flex-row  font-regular text-xs text-mainGray">
             대표자 김동규 TEL. 0507-1305-2974

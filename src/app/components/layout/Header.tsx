@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import SocialContact from "@/app/components/layout/SocialContact";
+// import SocialContact from "@/app/components/layout/SocialContact";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -56,7 +56,30 @@ const Header = () => {
             </div>
           </div>
           <div className="flex flex-row">
-            <SocialContact />
+            {/* <SocialContact /> */}
+            {/* 배포 이슈 (moduels not found) */}
+            <div className="flex flex-row gap-2.5 ">
+              <div className="hover:opacity-40">
+                <Link href="https://www.instagram.com/crepehub/">
+                  <Image
+                    src="/instagram.svg"
+                    alt="instagram"
+                    width={40}
+                    height={40}
+                  />
+                </Link>
+              </div>
+              <div className="hover:opacity-40">
+                <Link href="https://www.kakaotalk.com/">
+                  <Image
+                    src="/kakaotalk.svg"
+                    alt="kakaotalk"
+                    width={40}
+                    height={40}
+                  />
+                </Link>
+              </div>
+            </div>
             <button
               className="lg:hidden md:hidden sm:block ml-[8px] hover:opacity-40"
               onClick={handleMenuClick}
